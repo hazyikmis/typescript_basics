@@ -1,34 +1,3 @@
-# Installing TypeScript
-
-> npm install -g typescript ts-node
-
-Once its installed, check if its installed
-
-> tsc --help
-
-"tsc" is TypeScript compiler
-
-# Running TypeScript files
-
-METHOD 1:
-
-> tsc index.ts
-
-This "tsc" command converts index.ts to index.js, and then
-
-> node index.js
-
-METHOD 2:
-
-> ts-node index.ts
-
-This "ts-node" command automatically converts ts file to js and executes
-
-# Metadata on JS Objects
-
-> checkout the metadata.ts
-
-```
 //experimental options enabled to escape from errors in tsconfig.json file
 //"npm init -y", npm installed, package.json created in order to install "reflect-metadata" npm pack
 import 'reflect-metadata';
@@ -57,4 +26,3 @@ console.log(note, height); //hi there, 10
 Reflect.defineMetadata('noteColor', 'goodbye', plane, 'color');
 const colorNote = Reflect.getMetadata('noteColor', plane, 'color');
 console.log(colorNote);
-```
