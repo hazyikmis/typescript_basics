@@ -85,7 +85,7 @@ function login(path: string) {
 // const secret = Reflect.getMetadata('secret', Plane.prototype, 'fly');
 // console.log(secret);
 
-//when defining a decorator for a class, "type" parameter should be constructor of that class, (or typeof class = same meaning)
+//when defining a decorator for a class, "target" parameter should be constructor of that class, (or typeof class = same meaning)
 //this decorators (on class level) might be called "controllers", and help us to iterate all defined metadata(s) in the class
 function controller(target: typeof Plane) {
   for (let key in target.prototype) {
